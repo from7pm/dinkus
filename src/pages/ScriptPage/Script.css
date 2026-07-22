@@ -41,6 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .script-home {
@@ -49,7 +50,7 @@
 }
 
 .script-logo {
-    inline-size: min(160px, max(200px, 36cqw));
+    inline-size: min(140px, max(160px, 36cqw));
     cursor: pointer;
 }
 

@@ -26,9 +26,11 @@ body {
   min-height: 100dvh;
   font-size: 1.1 rem;
   cursor: pointer;
+  gap: 10px;
 }
 
 .logopage-first-logo {
-  width: min(400px, max(200px, 41cqw));
-  
+  width: min(260px, max(190px, 41cqw));
+  display: flex;
+  gap: 30;
 }

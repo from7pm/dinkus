@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: min(1vh, max(2vh, 3cqw));
+    gap: 10px;
 }
 
 .calendar-home {
@@ -26,7 +26,7 @@
 }
 
 .calendar-logo {
-    inline-size: min(160px, max(200px, 36cqw));
+    inline-size: min(140px, max(160px, 36cqw));
     cursor: pointer;
 }
 
