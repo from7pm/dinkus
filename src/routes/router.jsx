@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LogoPage from "../Logopage.jsx";
-import Home from "../pages/Homepage/home.jsx"
+import Home from "../pages/Homepage/Home.jsx"
 import Script from "../pages/ScriptPage/Script.jsx";
 import Calendar from "../pages/CalendarPage/calendar.jsx";
 import Diaries from "../pages/DiariesPage/Diaries/Diaries.jsx";
