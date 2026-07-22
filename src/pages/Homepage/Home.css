@@ -1,0 +1,455 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.home-jsdelivr.home-net/gh/projectnoonnu/pretendard@1.home-0/Pretendard-SemiBold.home-woff2') format('woff2');
+}
+
+* {
+    font-family: 'Pretendard';
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.home-containger {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-setting-button {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.home-logo-container {
+    width: 100%;
+    height: 26vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+.home-button {
+    width: min(50px, max(37px, 2cqw));
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.home-logo {
+    position: relative;
+    inline-size: min(260px, max(200px, 32cqw));
+}
+
+.home-subtitle {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    letter-spacing: 0.3dvw;
+    font-size: min(42px, max(30px, 3cqw));
+    line-height: 1;
+    opacity: 0;
+}
+
+.home-bookshelf-container {
+    width: 95%;
+    height: 74vh;
+    display: flex;
+    justify-self: center;
+    background-color: #FBF6EC;
+}
+
+.home-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vh;
+}
+
+/* =========================
+   첫 번째 코너: SCRIPT TIME
+========================= */
+.home-first-corner {
+    width: 95%;
+    height: 15vh;
+    background-color: #FED47A;
+
+    container-type: size;
+    overflow: hidden;
+}
+
+.home-script-time {
+    font-size: min(30px, max(23px, 4cqw));
+    color: #161616;
+    position: relative;
+    top: 1vh;
+    left: -5px;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    cursor: pointer;
+    font-size: clamp(14px, 22cqh, 30px);
+}
+
+/* S */
+.home-script-s {
+    width: min(50px, max(38px, 4cqw));
+    height: 11vh;
+    position: relative;
+    top: 3vh;
+    background-color: #AAA4CB;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+/* C */
+.home-script-c {
+    width: min(38px, max(23px, 4cqw));
+    height: 14vh;
+    background-color: #947DB3;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+/* RI */
+.home-script-ri {
+    width: min(78px, max(46px, 4cqw));
+    height: 12vh;
+    position: relative;
+    top: 2vh;
+    background-color: #B5CFDF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PT */
+.home-script-pt {
+    width: min(50px, max(40px, 7cqw));
+    height: 12vh;
+    position: relative;
+    top: 2vh;
+    background-color: #F5AC7A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* T */
+.home-time-t {
+    width: min(38px, max(23px, 4cqw));
+    height: 14vh;
+    background-color: #6AA7D6;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+/* I */
+.home-time-i {
+    width: min(38px, max(23px, 4cqw));
+    height: 12vh;
+    position: relative;
+    top: 2vh;
+    background-color: #F3EDB0;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+/* M */
+.home-time-m {
+    width: min(38px, max(23px, 4cqw));
+    height: 14vh;
+    background-color: #968C7F;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+/* E */
+.home-time-e {
+    width: min(38px, max(23px, 4cqw));
+    height: 13vh;
+    background-color: #EF98AA;
+    text-align: center;
+    position: relative;
+    left: min(23px, max(17px, 4cqw));
+    top: min(0.8vh, max(0.7vh, 2cqw));
+    display: grid;
+    place-items: center;
+    transform: rotate(-15deg);
+}
+
+/* =========================
+   두 번째 코너: DIARIES
+========================= */
+
+.home-second-corner {
+    width: 95%;
+    height: 15vh;
+    min-height: 0;
+    position: relative;
+    background-color: #fed47a;
+
+    /* 내부 cqw, cqh의 기준 */
+    container-type: size;
+    overflow: hidden;
+}
+
+.home-diaries {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1px;
+
+    font-size: clamp(14px, 22cqh, 30px);
+    color: #161616;
+    cursor: pointer;
+}
+
+/* DIA 가로 책 뭉치 */
+.home-dia {
+    width: min(180px, max(120px, 10cqw));
+    height: 100%;
+    position: relative;
+    top: 12%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 0 0 auto;
+    gap: 1px;
+}
+
+.home-diaries-dia-up {
+    width: min(180px, max(120px, 10cqw));
+    height: 17%;
+
+    background-color: #94cee5;
+    flex: 0 0 auto;
+}
+
+.home-diaries-dia {
+    width: min(161px, max(108px, 9cqw));
+    height: 39%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+
+    text-align: center;
+    background-color: #c488b6;
+}
+
+.home-diaries-dia-down {
+    width: min(173px, max(115px, 9.6cqw));
+    height: 25%;
+
+    background-color: #f7d7de;
+    flex: 0 0 auto;
+}
+
+/* R */
+.home-diaries-ries-r {
+    width: min(35px, max(27px, 2cqw));
+    height: 95%;
+
+    position: relative;
+    top: -4%;
+    left: min(12px, max(6px, 0.7cqw));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+
+    text-align: center;
+    background-color: #ec92b2;
+    transform: rotate(-5deg);
+}
+
+/* I */
+.home-diaries-ries-i {
+    width: min(44px, max(32px, 2.5cqw));
+    height: 88%;
+
+    position: relative;
+    top: 6%;
+    left: min(29px, max(15px, 1.6cqw));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+
+    text-align: center;
+    background-color: #838561;
+}
+
+/* E */
+.home-diaries-ries-e {
+    width: min(29px, max(22px, 1.7cqw));
+    height: 93%;
+
+    position: relative;
+    top: 2%;
+    left: min(29px, max(15px, 1.6cqw));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+
+    text-align: center;
+    background-color: #fef264;
+}
+
+/* S */
+.home-diaries-ries-s {
+    width: min(66px, max(45px, 3.7cqw));
+    height: 87%;
+
+    position: relative;
+    top: 7%;
+    left: min(29px, max(15px, 1.6cqw));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+
+    text-align: center;
+    background-color: #93a5ce;
+}
+
+/* =========================
+   세 번째 코너: CALENDAR
+========================= */
+
+.home-third-section {
+    width: 95%;
+    height: 15vh;
+    min-height: 0;
+    position: relative;
+
+    background-color: #fed47a;
+    container-type: size;
+    overflow: visible;
+}
+
+.home-calendar-corner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    color: #161616;
+    cursor: pointer;
+}
+
+.home-calendar {
+    width: auto;
+    height: 116%;
+    max-width: 45%;
+
+    position: absolute;
+    top: 1%;
+    z-index: 2;
+
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.home-calendar-year {
+    position: absolute;
+    top: 42%;
+    z-index: 5;
+
+    font-size: clamp(20px, 20cqh, 3.4rem);
+    line-height: 1;
+    text-align: center;
+    white-space: pre-wrap;
+    cursor: pointer;
+}
+
+/* 전역 ul, li에 영향을 주지 않도록 범위 제한 */
+.home-calendar-corner ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.home-calendar-year li:last-child {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 6%;
+
+    font-size: clamp(9px, 13cqh, 1.2rem);
+}
+
+/* =============================
+   세 번째 코너: USER INFORMATION
+============================== */
+.home-fourth-corner {
+    width: 95%;
+    height: 15vh;
+    min-height: 0;
+    position: relative;
+
+    background-color: #fed47a;
+    container-type: size;
+    overflow: visible;
+}
+
+.home-my-account-and-favorites {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 30px;
+}
+
+.home-my-account-img {
+    width: auto;
+    height: 116%;
+    max-width: 45%;
+
+    z-index: 2;
+
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.home-favorites-img {
+    width: auto;
+    height: 116%;
+    max-width: 45%;
+    margin-top: 1rem;
+    z-index: 2;
+
+    object-fit: contain;
+    cursor: pointer;
+}

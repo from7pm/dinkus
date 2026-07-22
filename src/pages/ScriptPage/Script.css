@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-display: swap;
+}
+
+* {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.script-container {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.script-setting-button {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.script-logo-container {
+    width: 100%;
+    height: 26vh;
+    flex: 0 0 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.script-home {
+    width: min(45px, max(25px, 2cqw));
+    cursor: pointer;
+}
+
+.script-logo {
+    inline-size: min(160px, max(200px, 36cqw));
+    cursor: pointer;
+}
+
+.script-subtitle {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    letter-spacing: 0.3svw;
+    font-size: min(30px, max(20px, 2cqw));
+    line-height: 1;
+    color: #FED47A;
+}
+
+.script-papers-container {
+    width: 95%;
+    height: 74svh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background-color: #FBF6EC;
+    border-radius: 12px 12px 0 0;
+    margin: 0 auto;
+}
+
+.script-clip-container {
+    position: absolute;
+}
+
+.script-clip {
+    inline-size: min(100px, max(50px, 60cqw));
+    position: absolute;
+    top: -31.8px;
+    left: -35vw;
+}
+
+.script-content-change-button {
+    height: 74svh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.script-up-button-container {
+    width: 95svw;
+    display: flex;
+    justify-content: center;
+}
+
+.script-up-button-img {
+    width: 15px;
+    padding-top: 20px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.script-down-button-container {
+    width: 95svw;
+    display: flex;
+    justify-content: center;
+    z-index: 11;
+}
+
+.script-down-button-img {
+    width: 15px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.script-content-container {
+    width: 100%;
+    height: 74svh;
+    z-index: 10;
+    color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.script-layout-with-search-box {
+    width: min(100% - 48px, 900px);
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    margin-top: 4vh;
+}
+
+.script-grid-img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.script-search-img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.script-write-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+}
+
+.script-write-placeholder {
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+    color: #484848;
+}
+
+.script-write-textarea {
+    width: inherit;
+    height: inherit;
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    color: transparent;
+    overflow: hidden;
+    -webkit-text-fill-color: transparent;
+}
+
+.script-write-textarea:focus {
+    color: transparent;
+}
+
+.script-write-textarea::selection {
+    color: transparent;
+}
+
+.script-preview-inline-block {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    overflow: visible;
+}
+
+.script-preview-container {
+    position: relative;
+    width: 100%;
+    height: calc(40vh - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 10px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.script-preview-line {
+    width: min(100% - 48px, 900px);
+    margin-inline: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.script-empty-line {
+    width: 20px;
+    height: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 1px transparent;
+    color: #161616;
+    flex: 0 0 2px;
+}
+
+.script-lines-square {
+    margin: 0;
+    flex: 0 0 auto;
+    white-space: pre-line;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.script-word-line-box {
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.script-word-box {
+    width: 20px;
+    height: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #161616;
+    flex: 0 0 2px;
+}
+
+.script-grid-word {
+    width: 32px;
+    height: 32px;
+    box-shadow: 0 0 0 1px #93a5ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.script-line-layout .script-preview-line {
+    width: min(100% - 48px, 900px);
+    margin-inline: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.script-line-word {
+    width: 32px;
+    height: 32px;
+    box-shadow: none;
+    border-bottom: 1px solid #93a5ce;
+    flex: 0 0 2px;
+    font-size: 16px;
+}
+
+.script-text-length-with-buttons {
+    width: min(100% - 48px, 900px);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8vh;
+    align-items: center;
+}
+
+.script-text-count {
+    margin-top: 1rem;
+    font-size: 16px;
+    color: #484848;
+    line-height: 1;
+}
+
+.script-button-box {
+    display: flex;
+}
+
+.script-reset-button {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    background: #FBF6EC;
+    border-color: #FED47A;
+    border-style: solid;
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 11;
+}
+
+.script-save-button {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    background: #FED47A;
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 1;
+    border: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 11;
+}
