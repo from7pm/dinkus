@@ -10,7 +10,7 @@
     box-sizing: content-box;
 }
 
-.home-containger {
+.home-container {
     position: relative;
     width: 100%;
     display: flex;
