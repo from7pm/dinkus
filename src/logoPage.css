@@ -20,14 +20,15 @@ body {
 
 .logopage-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  /* 가로 중앙 */
   align-items: center;
-  /* 세로 중앙 */
   min-height: 100dvh;
+  font-size: 1.1 rem;
+  cursor: pointer;
 }
 
-.first-logo {
+.logopage-first-logo {
   width: min(400px, max(200px, 41cqw));
-  cursor: pointer;
+  
 }

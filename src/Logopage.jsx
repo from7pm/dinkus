@@ -15,11 +15,13 @@ function LogoPage() {
   return (
 
     <>
-      <div className="logopage-container">
-        <img className="first-logo"
+      <div
+        className="logopage-container"
+        onClick={home}>
+        <img className="logopage-first-logo"
           src={dinkusImage}
-          onClick={home}
           alt="dinkus" />
+        <p className="logopage-enter">CLICK TO ENTER</p>
       </div>
     </>
   )
