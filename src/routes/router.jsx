@@ -2,9 +2,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LogoPage from "../Logopage.jsx";
 import Home from "../pages/Homepage/Home.jsx"
 import Script from "../pages/ScriptPage/Script.jsx";
-import Calendar from "../pages/CalendarPage/calendar.jsx";
+import Calendar from "../pages/CalendarPage/Calendar.jsx";
 import Diaries from "../pages/DiariesPage/Diaries/Diaries.jsx";
-import Setting from "../pages/SettingPage/setting.jsx"
+import Setting from "../pages/SettingPage/Setting.jsx"
 import YearlyPage from "../pages/DiariesPage/YearlyPage/YearlyPage.jsx";
 import MonthlyPage from "../pages/DiariesPage/MonthlyPage/MonthlyPage.jsx";
 import WeeklyPage from "../pages/DiariesPage/WeeklyPage/WeeklyPage.jsx";
