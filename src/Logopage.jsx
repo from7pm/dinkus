@@ -1,6 +1,7 @@
 
 import { useNavigate } from 'react-router-dom';
 import './logoPage.css';
+import dinkusImage from './assets/images/dinkus.svg';
 
 function LogoPage() {
 
@@ -16,7 +17,7 @@ function LogoPage() {
     <>
       <div className="logopage-container">
         <img className="first-logo"
-          src="./dinkus.svg"
+          src={dinkusImage}
           onClick={home}
           alt="dinkus" />
       </div>
