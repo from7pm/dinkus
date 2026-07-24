@@ -1,8 +1,11 @@
-import { createRoot } from 'react-dom/client';
-import Router from './routes/router.jsx';
-import './index.css';
+import { createRoot } from "react-dom/client";
+import { Analytics } from "@vercel/analytics/react";
+import Router from "./routes/router.jsx";
+import "./index.css";
 
-
-createRoot(document.getElementById('root')).render(
-     <Router />
-)
+createRoot(document.getElementById("root")).render(
+  <>
+    <Router />
+    <Analytics />
+  </>
+);
